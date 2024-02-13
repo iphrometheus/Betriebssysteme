@@ -49,13 +49,16 @@ int main ()
 	   * Der Elternprozess wartet auf die Beendigung des Kindprozesses */
 	   
 	   pid_t p = fork();
-	   char *tmp = "bin/bash/";
-	   strncat(tmp, &temp, sizeof(temp));
-	   char * arg[] = {tmp, NULL};
 	   if(p == 0){
-		execlp(tmp, arg, NULL);
-		return 0;
-	   }
+		char *tmp = "/usr/bin/";
+	   	char * arg[] = {tmp ,NULL};
+		printf("\n");
+		execvp(temp, arg);
+		}
+		else{
+			int status;
+			waitpid(p,&status,WUNTRACED);
+		}
 
 
 	}
@@ -79,7 +82,7 @@ int main ()
 	  if (list)
 	    {
 	      for (i = 0; list[i]; i++)
-		fprintf (stderr, "%d: %s\r\n", i, list[i]->line);
+		fprintf (stderr, "%d: %s\r\n", i, list[i] -> line);
 	    }
 	}
       free (temp);
