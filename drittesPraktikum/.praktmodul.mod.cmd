@@ -1,0 +1,1 @@
+savedcmd_/home/dev/Aufgaben/drittesPraktikum/praktmodul.mod := printf '%s\n'   praktmodul.o | awk '!x[$$0]++ { print("/home/dev/Aufgaben/drittesPraktikum/"$$0) }' > /home/dev/Aufgaben/drittesPraktikum/praktmodul.mod

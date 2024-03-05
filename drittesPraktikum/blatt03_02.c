@@ -24,6 +24,14 @@ int main(int argc, char **argv){
     while(1){
         sleep(5);
         
-        sleep(1000);
+        sleep(1000); 
         }
 }
+//3d return gibt integer zurück (0 wenn erfolgreich beendet)
+// exit beendet prozess kind wird an Eltern prozess weiter gegeben
+// Wert von Betriebssystem ausgewertet
+
+//3e 
+// extern char ** environ (kommplette Liste) (last pointer == NULL !)
+// char * string = environ[0] (einzelner Enviorment value)
+// 

@@ -1,0 +1,1 @@
+savedcmd_/home/dev/Aufgaben/drittesPraktikum/praktmodul.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/dev/Aufgaben/drittesPraktikum/praktmodul.ko /home/dev/Aufgaben/drittesPraktikum/praktmodul.o /home/dev/Aufgaben/drittesPraktikum/praktmodul.mod.o;  make -f ./arch/x86/Makefile.postlink /home/dev/Aufgaben/drittesPraktikum/praktmodul.ko
